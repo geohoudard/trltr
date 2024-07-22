@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Turluteur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="media/logo2.png" type="image/x-icon">
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <img src="media/logo2.png" alt="Logo" class="popup-logo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>     
+    <div class="header">
+        <div class="logo-container">
+            <img src="media/logo2.png" alt="logoturl" class="site-logo">
+        </div>
+        <h1>Outil d'arbitrage pour pêcheurs de céphalopodes</h1>
+        <div class="navire-noms">
+            <div class="navire">
+                <label for="navire1_name">Nom du navire 1 :</label>
+                <input type="text" id="navire1_name" name="navire1_name">
+            </div>
+            <div class="navire">
+                <label for="navire2_name">Nom du navire 2 :</label>
+                <input type="text" id="navire2_name" name="navire2_name">
+            </div>
+            <div class="navire">
+                <label for="navire3_name">Nom du navire 3 :</label>
+                <input type="text" id="navire3_name" name="navire3_name">
+            </div>
+            <div class="navire">
+                <label for="navire4_name">Nom du navire 4 :</label>
+                <input type="text" id="navire4_name" name="navire4_name">
+            </div>
+        </div>
+    </div>
+    <div class="container-wrapper">
+        <div class="container">
+            <form id="diagnosticForm">
+                <div class="section">
+                    <button type="button" class="accordion" id="navire1_button">Navire 1</button>
+                    <div class="panel">
+                        <label for="boat1_type">Catégorie de navire :</label>
+                        <select id="boat1_type" name="boat1_type">
+                            <option value="rafiot">Vieux rafiot pourri (type annexe)</option>
+                            <option value="voile">Grand voyageur (voile)</option>
+                            <option value="chalutier">Chalutier (moteur)</option>
+                        </select>
+
+                        <label for="boat1_crew">Nombre de matelots :</label>
+                        <input type="number" id="boat1_crew" name="boat1_crew">
+
+                        <label for="boat1_age">Age cumulé des matelots :</label>
+                        <input type="number" id="boat1_age" name="boat1_age">
+
+                        <label for="boat1_weight">Poids total de la pêche (g) :</label>
+                        <input type="number" id="boat1_weight" name="boat1_weight">
+
+                        <label for="boat1_amount">Nombre de seiches ramenées à terre :</label>
+                        <input type="number" id="boat1_amount" name="boat1_amount">
+                        
+                        <div class="checkbox-group">           
+                            <h3>Bonus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat1_bonus1" name="boat1_bonus1">
+                                <label for="boat1_bonus1">
+                                    <img src="media/crab.png" alt="Icon" class="checkbox-icon">
+                                    <p>Crabe ingénieux </p>( technique de pêche innovante )</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat1_bonus2" name="boat1_bonus2">
+                                <label for="boat1_bonus2">
+                                    <img src="media/mouette.png" alt="Icon" class="checkbox-icon">
+                                    <p>Goéland élégant </p>( déguisements sur le bateau )</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat1_bonus3" name="boat1_bonus3">
+                                <label for="boat1_bonus3">
+                                    <img src="media/cormoran.png" alt="Icon" class="checkbox-icon">
+                                    <p>Cormoran performant</p>( la plus grosse seiche )</label>
+                            </div>
+                            <h3>Malus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat1_malus1" name="boat1_malus1">
+                                <label for="boat1_malus1">
+                                    <img src="media/chaise-de-plage.png" alt="Icon" class="checkbox-icon">
+                                    <p>Rascasse feignasse</p>( absence lors du nettoyage )</label>
+                            </div>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat1_malus2" name="boat1_malus2">
+                                <label for="boat1_malus2">
+                                    <img src="media/seiche.png" alt="Icon" class="checkbox-icon">
+                                    <p>Mouette mazoutée</p>( équipe la plus encrée )</label>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <button type="button" class="accordion" id="navire2_button">Navire 2</button>
+                    <div class="panel">
+                        <label for="boat2_type">Catégorie de navire :</label>
+                        <select id="boat2_type" name="boat2_type">
+                            <option value="rafiot">Vieux rafiot pourri (type annexe)</option>
+                            <option value="voile">Grand voyageur (voile)</option>
+                            <option value="chalutier">Chalutier (moteur)</option>
+                        </select>
+
+                        <label for="boat2_crew">Nombre de matelots :</label>
+                        <input type="number" id="boat2_crew" name="boat2_crew">
+
+                        <label for="boat2_age">Age cumulé des matelots :</label>
+                        <input type="number" id="boat2_age" name="boat2_age">
+
+                        <label for="boat2_weight">Poids total de la pêche (g) :</label>
+                        <input type="number" id="boat2_weight" name="boat2_weight">
+
+                        <label for="boat2_amount">Nombre de seiches ramenées à terre :</label>
+                        <input type="number" id="boat2_amount" name="boat2_amount">
+                        
+                        <div class="checkbox-group">           
+                            <h3>Bonus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat2_bonus1" name="boat2_bonus1">
+                                <label for="boat2_bonus1">Technique de pêche innovante</label>
+                            </div>
+                            <h3>Malus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat2_malus1" name="boat2_malus1">
+                                <label for="boat2_malus1">Feignasse (absence lors du nettoyage des seiches)</label>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <button type="button" class="accordion" id="navire3_button">Navire 3</button>
+                    <div class="panel">
+                        <label for="boat3_type">Catégorie de navire :</label>
+                        <select id="boat3_type" name="boat3_type">
+                            <option value="rafiot">Vieux rafiot pourri (type annexe)</option>
+                            <option value="voile">Grand voyageur (voile)</option>
+                            <option value="chalutier">Chalutier (moteur)</option>
+                        </select>
+
+                        <label for="boat3_crew">Nombre de matelots :</label>
+                        <input type="number" id="boat3_crew" name="boat3_crew">
+
+                        <label for="boat3_age">Age cumulé des matelots :</label>
+                        <input type="number" id="boat3_age" name="boat3_age">
+
+                        <label for="boat3_weight">Poids total de la pêche (g) :</label>
+                        <input type="number" id="boat3_weight" name="boat3_weight">
+
+                        <label for="boat3_amount">Nombre de seiches ramenées à terre :</label>
+                        <input type="number" id="boat3_amount" name="boat3_amount">
+                        
+                        <div class="checkbox-group">           
+                            <h3>Bonus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat3_bonus1" name="boat3_bonus1">
+                                <label for="boat3_bonus1">Technique de pêche innovante</label>
+                            </div>
+                            <h3>Malus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat3_malus1" name="boat3_malus1">
+                                <label for="boat3_malus1">Feignasse (absence lors du nettoyage des seiches)</label>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <button type="button" class="accordion" id="navire4_button">Navire 4</button>
+                    <div class="panel">
+                        <label for="boat4_type">Catégorie de navire :</label>
+                        <select id="boat4_type" name="boat4_type">
+                            <option value="rafiot">Vieux rafiot pourri (type annexe)</option>
+                            <option value="voile">Grand voyageur (voile)</option>
+                            <option value="chalutier">Chalutier (moteur)</option>
+                        </select>
+
+                        <label for="boat4_crew">Nombre de matelots :</label>
+                        <input type="number" id="boat4_crew" name="boat4_crew">
+
+                        <label for="boat4_age">Age cumulé des matelots :</label>
+                        <input type="number" id="boat4_age" name="boat4_age">
+
+                        <label for="boat4_weight">Poids total de la pêche (g) :</label>
+                        <input type="number" id="boat4_weight" name="boat4_weight">
+
+                        <label for="boat4_amount">Nombre de seiches ramenées à terre :</label>
+                        <input type="number" id="boat4_amount" name="boat4_amount">
+                        
+                        <div class="checkbox-group">           
+                            <h3>Bonus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat4_bonus1" name="boat4_bonus1">
+                                <label for="boat4_bonus1">Technique de pêche innovante</label>
+                            </div>
+                            <h3>Malus</h3>
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="boat4_malus1" name="boat4_malus1">
+                                <label for="boat4_malus1">Feignasse (absence lors du nettoyage des seiches)</label>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <button type="button_save" onclick="calculateDiagnosis()">Calculer les résultats</button>
+            <button type="button_save" onclick="saveResults()">Enregistrer les résultats</button>
+            <button type="button_save" onclick="document.getElementById('csvFileInput').click()">Charger les résultats</button>
+            <div id="results">             
+                <input type="file" id="csvFileInput" accept=".csv" style="display:none" onchange="loadCSV(event)">      
+                <h2>Résultats du Diagnostic</h2>
+                <p id="diagnosisResult">Les résultats s'affichent ici.<br><br></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/name.js"></script>
+    <script src="js/saveResults.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
